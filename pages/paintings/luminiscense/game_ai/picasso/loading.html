@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="../../../../../styles/reset.css" />
+		<link rel="stylesheet" href="../../../../../styles/style.min.css" />
+		<title>Luminiscense | Game</title>
+	</head>
+	<body>
+		<div class="container overflow pb-150">
+			<p class="title">Please wait, image is generating</p>
+			<div class="vertical_buttons mb-50">
+				<img
+					src="../../../../../images/Dog/frame.gif"
+					class="mt-50 horizontal-revert"
+				/>
+			</div>
+			<div class="buttons_wrapper mt-100 fixed_buttons game_buttons">
+				<a href="../ai_game_start.html" class="button_bottom">Back</a>
+			</div>
+		</div>
+		<script type="text/javascript">
+			const pageName = 'loading.html';
+			// Получаем текущий путь
+			const currentPath = window.location.pathname;
+			// Всего картин
+			const picturesLength = 5;
+			// Динамический выбор из картин
+			const randomPage = Math.floor(Math.random() * picturesLength);
+			const newPage = `result${randomPage}.html`;
+
+			setTimeout(function () {
+				// Заменяем текущую страницу на соседнюю
+				var newPath = currentPath.replace(pageName, newPage);
+				window.location.href = newPath;
+			}, 2000);
+		</script>
+	</body>
+</html>
