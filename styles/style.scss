@@ -56,12 +56,12 @@ body {
 }
 .language_select {
 	@include karma();
-	font-size: 16px;
+	font-size: 13px;
 	padding-inline: 5px;
 	line-height: 1.2;
 	cursor: pointer;
 	color: #000;
-	padding-top: 20px;
+	padding-top: 22px;
 	border-radius: 4px;
 	border: 1px solid black;
 

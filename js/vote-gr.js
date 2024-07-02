@@ -6,20 +6,6 @@ const swiper = new Swiper('.swiper', {
 	allowTouchMove: false,
 });
 
-// Варианты ответов:
-
-// Картина авангарда, пользователь ответил Да
-// Hooray! This is a picture Название картины of Имя художника !
-
-// Картина авангарда, пользователь ответил Нет
-// Oh! it's a pity, it was a painting"...." it would have been perfect for Costakis' collection.
-
-// Картина не авангарда, пользователь ответил Да
-// Wrong! This is a picture Название картины of Имя художника !
-
-// Картина не авангарда, пользователь ответил Нет
-// Right! This is a picture Название картины of Имя художника !
-
 yesButtons.forEach((button) => {
 	button.addEventListener('click', () => {
 		checkAnswer(button);
