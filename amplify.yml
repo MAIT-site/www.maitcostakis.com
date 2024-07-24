@@ -11,5 +11,6 @@ frontend:
     exclude:
       - gr/**/*
       - 'index-old*.html'
+      - 'amplify.yml'
   cache:
     paths: []
