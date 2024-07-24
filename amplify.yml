@@ -1,0 +1,16 @@
+version: 1
+frontend:
+  phases:
+    build:
+      commands:
+        - echo "Building site"
+  artifacts:
+    baseDirectory: /
+    files:
+      - '**/*'
+    exclude:
+      - gr/**/*
+      - 'index-old*.html'
+      - 'amplify.yml'
+  cache:
+    paths: []
